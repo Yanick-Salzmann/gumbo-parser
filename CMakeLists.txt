@@ -17,6 +17,8 @@ endif ()
 
 set_target_properties(gumbo PROPERTIES PUBLIC_HEADER "")
 
+set_target_properties(gumbo PROPERTIES POSITION_INDEPENDENT_CODE ON)
+
 INSTALL(TARGETS gumbo
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib)
