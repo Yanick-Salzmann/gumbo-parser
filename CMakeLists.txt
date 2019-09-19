@@ -18,7 +18,8 @@ endif ()
 set_target_properties(gumbo PROPERTIES PUBLIC_HEADER "")
 
 INSTALL(TARGETS gumbo
-        LIBRARY DESTINATION lib)
+        LIBRARY DESTINATION lib
+        ARCHIVE DESTINATION lib)
 
 INSTALL(DIRECTORY ${CMAKE_SOURCE_DIR}/src/
         DESTINATION include/gumbo
